@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CardNova — Profile Card Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CardNova</h1>
+    <p>Create your premium profile card instantly</p>
+
+    <div class="inputs">
+      <label>
+        Upload Photo:
+        <input type="file" id="photoInput" accept="image/*">
+      </label>
+      <label>
+        Name:
+        <input type="text" id="nameInput" placeholder="Your Name">
+      </label>
+      <label>
+        Bio:
+        <input type="text" id="bioInput" placeholder="A short bio">
+      </label>
+      <button id="themeToggle">Toggle Light/Dark</button>
+      <button id="downloadBtn">Download Card</button>
+    </div>
+
+    <div class="card" id="card">
+      <img src="" alt="Profile Photo" id="cardPhoto">
+      <h2 id="cardName">Your Name</h2>
+      <p id="cardBio">Your bio goes here</p>
+    </div>
+  </div>
+
+  <!-- html2canvas Library -->
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
